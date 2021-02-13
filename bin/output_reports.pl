@@ -903,7 +903,7 @@ sub predict_metacyc_pathways{
     
 
 
-    my $cmd = "MinPath.py -any $prefix.mapping.txt -map ec2path -report $prefix.minpath -details $prefix.minpath.details > /dev/null 2>&1;";
+    my $cmd = "MinPath.py -any $prefix.mapping.txt -map ec2path -report $prefix.minpath -details $prefix.minpath.details -mps $prefix.minpath.mps  > /dev/null 2>&1;";
     msg("******start running minpath $cmd\n");
     runcmd("$cmd");
     
