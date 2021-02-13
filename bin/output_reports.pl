@@ -795,7 +795,7 @@ sub output_geneAnnotation{
 sub predict_kegg_pathways{
     
     my ($prefix, $ko2genes, $seqHash) = @_;
-    my $cmd = "MinPath.py -ko $prefix.mapping.txt -report $prefix.minpath -details $prefix.minpath.details > /dev/null 2>&1;";
+    my $cmd = "MinPath.py -ko $prefix.mapping.txt -report $prefix.minpath -details $prefix.minpath.details -mps $prefix.minpath.mps > /dev/null 2>&1;";
     msg("******start running minpath $cmd\n");
     runcmd("$cmd");
     
