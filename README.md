@@ -1,5 +1,7 @@
 
 # MetaErg
+- Notes from @pooranis are in [Biowulf_README](Biowulf_README.md) . The README below is from the upstream repo.
+
 MetaErg is a stand-alone and fully automated metagenomic and metaproteomic data annotation pipeline. It bundles essential annotation tasks such as feature prediction, functional annotation wit
 h Hidden Markov Model (HMM) searches as well as blast and diamond searches. It estimates and visualizes quantitative taxonomic and pathway compositions of multiple metagenomic and proteomics s
 amples using sequencing coverage and proteomics spectral counts, respectively. For visualization, MetaErg provides a HTML interface, bringing all annotation results together in sortable and se
