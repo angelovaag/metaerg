@@ -843,8 +843,8 @@ sub setOptions {
 	{OPT=>"gtype=s",  VAR=>\$gtype, DEFAULT=>"meta", DESC=>"single or metagenome: [arc|euk|bac|meta]"},
 	{OPT=>"minorflen=i",  VAR=>\$minorflen, DEFAULT=>180, DESC=>"Minimum orf length"},
 	{OPT=>"evalue=f",VAR=>\$evalue, DEFAULT=>1E-5, DESC=>"evalue cut-off for rRNA prediction"},
-	{OPT=>"sp!",  VAR=>\$sp, DEFAULT=>0, DESC=>"Disable signal peptide and cleavage site predication using signalp, it is slow when it is enabled"},
-	{OPT=>"tm!",  VAR=>\$tm, DEFAULT=>0, DESC=>"Disable transmembrane helics predication using tmhmm, it is slow when it is enabled"},
+	{OPT=>"sp!",  VAR=>\$sp, DEFAULT=>0, DESC=>"Disable signal peptide and cleavage site predication using phobius, it is slow when it is enabled"},
+	{OPT=>"tm!",  VAR=>\$tm, DEFAULT=>0, DESC=>"Disable transmembrane helics predication using phobius, it is slow when it is enabled"},
 
 	'Outputs:',
 	{OPT=>"prefix=s",  VAR=>\$prefix, DEFAULT=>'', DESC=>"Filename output prefix"},

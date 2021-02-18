@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use File::Spec;
 
-my @tools = ("aragorn", "rRNAFinder.pl", "rna2taxon.pl", "minced", "prodigal", "signalp", "tmhmm", "diamond", "hmmsearch", "sqlite3", "MinPath.py");
+my @tools = ("aragorn", "rRNAFinder.pl", "rna2taxon.pl", "minced", "prodigal", "signalp", "tmhmm", "diamond", "hmmsearch", "sqlite3", "MinPath.py", "phobius.pl");
 
 check_all_tools();
 

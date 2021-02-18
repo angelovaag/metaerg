@@ -96,9 +96,10 @@ make install
 - Download [ARAGORN](http://www.ansikte.se/ARAGORN/Downloads/) to \$DIR/src and compile according to instructions.  I use aragorn1.2.41.c .  Move binary to $DIR/bin
 - Download from [minCED releases 0.4.2](https://github.com/ctSkennerton/minced/releases/tag/0.4.2) minced script and minced.jar to $DIR/bin. Needs Java 2.12 and up to run as in modulefile
 - Download ~~[MinPath repo link exact commit](https://github.com/mgtools/MinPath/tree/8fcbf8823f0b3d0c9279f8be407c8caa0e55ed47)~~ [my fork of MinPath](https://gitlab.com/pooranis/minpath) to \$DIR/src .  
-- Download[Phobius 1.01](https://phobius.sbc.su.se/) which it seems MetaErg is [now using](https://github.com/xiaoli-dong/metaerg/commit/406f9e4a41a54643fedadf958cc550a7ac311846) instead of signalp and tmhmm.  Contrary to the phobius documentation, MetaErg calls it as `phobius.pl` instead of `phobius` So I linked both from \$DIR/src/phobius to the \$DIR/bin directory.
+- Download [Phobius 1.01](https://phobius.sbc.su.se/) which it seems MetaErg is [now using](https://github.com/xiaoli-dong/metaerg/commit/406f9e4a41a54643fedadf958cc550a7ac311846) instead of signalp and tmhmm.  Contrary to the phobius documentation, MetaErg calls it as `phobius.pl` instead of `phobius` So I linked both from \$DIR/src/phobius to the \$DIR/bin directory.
   - (??? Maybe not needed any more) To Do: Ask biowulf to uncouple signalP from trinotate, until then download signalP 5.0b Linux x86_64 and TMHMM 2.0c  from [DTU software](https://services.healthtech.dtu.dk/software.php) to \$DIR/src and link in \$DIR/bin and \$DIR/lib.  Change shebangs of perl scripts in tmhmm to `#!/usr/bin/env perl`(???)
 - I fix small database path errors in [my fork of metaerg](https://github.com/pooranis/metaerg)
+- Check tools are installed with [`check_tools.pl`](https://github.com/pooranis/metaerg/blob/master/bin/check_tools.pl)
 
 ### Databases
 
